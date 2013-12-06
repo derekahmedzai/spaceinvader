@@ -1,0 +1,47 @@
+<!--
+
+Hello! This was made by in Feb 2013 Derek Ahmedzai at Sharpshooter Digital.
+http://www.sharpshooter.org
+
+-->
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Be the space invader. A headtracking experiment using headtrackr.</title>
+  <script src="libs/headtrackr/headtrackr.js"></script>
+  <script src="libs/jquery/jquery-1.7.2.min.js"></script>
+  <script src="game.js"></script>
+  <link rel="stylesheet" href="game.css" />
+  
+  <meta property="og:url" content="http://sharpshooterlabs.com/projects/headtrackr/game/" />
+  <meta property="og:title" content="Be the space invader." />
+  <meta property="og:description" content="A headtracking experiment using headtrackr." />
+  <meta property="og:image" content="http://sharpshooterlabs.com/projects/headtrackr/game/invader.og.png" />
+</head>
+<body>
+  <!--<div id="game"></div>-->
+  <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
+  <video id="inputVideo" autoplay loop></video>
+  <div id="overlay">
+    <div id="title">Be the space invader. A headtracking experiment using <a href="https://github.com/auduno/headtrackr/">headtrackr</a>.</div>
+    <div id="info">1. Use Chrome or Opera&hellip; 2. Enable your webcam&hellip; 3. Wait for it&hellip;</div>
+    <div id="debug">Thinking&hellip; Thinking&hellip; Thinking&hellip;</div>
+  </div>
+  <div id="debugCanvas">
+    <div id="thingy"></div>
+  </div>
+
+  <!-- GA for Dropbox -->  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-151636-22']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+</body>
+</html>
